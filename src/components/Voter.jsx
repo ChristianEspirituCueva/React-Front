@@ -153,7 +153,7 @@ class Voter extends Component {
                         <label htmlFor="lugar_votacion">Numero de Votacion</label>
                         <input className="form-control" type="text" name="lugar_votacion" id="lugar_votacion" onChange={this.handleChange} value={form?form.lugar_votacion:''}/>
                         <br />
-                        <label htmlFor="candidato_voto">Numero de Votacion</label>
+                        <label htmlFor="candidato_voto">Numero de Candidato</label>
                         <input className="form-control" type="text" name="candidato_voto" id="candidato_voto" onChange={this.handleChange} value={form?form.candidato_voto:''}/>
                       </div>
                     </ModalBody>

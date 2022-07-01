@@ -87,9 +87,12 @@ state={
 
 
   render(){
+    
     const {form}=this.state;
     return (
+      
       <div className="App">
+        <div className="scrollbar scrollbar-juicy-peach">
       <br /><br />
     <button className="btn btn-success" onClick={()=>{this.setState({form: null, tipoModal: 'insertar'}); this.modalInsertar()}}>Agregar Candidato</button>
     <br /><br />
@@ -135,7 +138,7 @@ state={
                   <ModalBody>
                     <div className="form-group">
                       <label htmlFor="id">ID</label>
-                      <input className="form-control" type="hidden" name="id" id="id" readOnly onChange={this.handleChange} value={form?form.id: 1 }/>
+                      <input className="form-control" type="hidden" name="id" id="id" readOnly onChange={this.handleChange} value={form?form.id: '' }/>
                       <br />
                       <label htmlFor="nombre">Nombre</label>
                       <input className="form-control" type="text" name="nombre" id="nombre" onChange={this.handleChange} value={form?form.nombre: ''}/>
@@ -176,7 +179,7 @@ state={
         </ModalFooter>
       </Modal>
     </div>
-
+    </div>
 
 
     );
